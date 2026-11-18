@@ -1,0 +1,9 @@
+{
+  "name": "v-google",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "test": "npm --prefix backend test"
+  }
+}
