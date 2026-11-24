@@ -24,6 +24,7 @@ const getQuery = (req, res, next) => {
 
 export function createApp() {
   const app = express();
+  app.set('trust proxy', 1);
   app.use(helmet());
   app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5173' }));
   app.use(express.json({ limit: '10kb' }));
